@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: url("https://images.unsplash.com/photo-1508768787810-6adc1f613514?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e27f6661df21ed17ab5355b28af8df4e&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.post-container {
+    height: 100vh;
+    width: 80vw;
+    max-width: 560px;
+    background-color: rgba(41, 39, 39, 0.6);
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgba(41, 39, 39, 1);
+    padding: 10px;
+}
+
+.post:nth-child(even) {
+    align-items: flex-end;
+}
+
+.post p {
+    color: #fff;
+}
+
+.post small {
+    color: rgb(248, 197, 31)
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.form-area input {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 2px 4px 2px rgba(247,7,7,0.4);
+    padding: 5px;
+    width: 25vw;
+    max-width: 500px;
+}
+
+.form-area input:focus {
+    outline: none;
+}
+
+.form-area textarea {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    letter-spacing: 1.3px;
+    box-shadow: 1px 2px 4px 2px rgba(247,7,7,0.4);
+}
+
+.form-area textarea:focus {
+    outline: none;
+}
+
+.submit {
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    box-shadow: 1px 2px 4px 2px rgba(247,7,7,0.4);
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background-color: rgba(41, 39, 39, 1);
+    color: #fff;
+}
+
+.submit:focus {
+    outline: none;
+}
+
+.submit:active {
+    transform: scale(0.98);
+}

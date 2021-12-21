@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cludflare.com/ajax/libs/fontawesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Bullettin Board</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div id="post-container" class="post-container">
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+        <div class="post">
+            <p>XXXXXX</p>
+            <small class="name">selfnote</small>
+        </div>
+    </div>
+    <div class="form-area">
+        <input type="text" class="username" id="username" autocomplete="off" placeholder="Your Name">
+        <textarea name="post" id="post" cols="30" rows="10" autocomplete="off"></textarea>
+        <button id="submit" class="submit">POST</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
