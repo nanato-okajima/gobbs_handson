@@ -102,6 +102,8 @@ func ListenToWsChannel() {
 		switch payload.Action {
 		case "username":
 			clients[payload.Conn] = payload.username
+		case "left":
+			delete(clients, payload.Conn)
 		}
 		// response.Action = "Sample Action"
 		// response.Post = fmt.Sprintf(`
