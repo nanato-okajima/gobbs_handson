@@ -99,13 +99,17 @@ func ListenToWsChannel() {
 	for {
 		payload := <-wsChan
 
-		response.Action = "Sample Action"
-		response.Post = fmt.Sprintf(`
-			<div class="message">
-				<p>%s</p>
-				<small class="name">%s</small>
-			</div>`, payload.Username, payload.Post)
+		switch payload.Action {
+		case "username":
+			clients[payload.Conn] = payload.username
+		}
+		// response.Action = "Sample Action"
+		// response.Post = fmt.Sprintf(`
+		// 	<div class="message">
+		// 		<p>%s</p>
+		// 		<small class="name">%s</small>
+		// 	</div>`, payload.Username, payload.Post)
 
-		broadcastToAllUser(response)
+		// broadcastToAllUser(response)
 	}
 }
