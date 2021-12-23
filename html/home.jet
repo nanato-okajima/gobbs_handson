@@ -11,62 +11,14 @@
 </head>
 
 <body>
-    <div id="post-container" class="post-container">
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-        <div class="post">
-            <p>XXXXXX</p>
-            <small class="name">selfnote</small>
-        </div>
-    </div>
+    <div id="post-container" class="post-container"></div>
     <div class="form-area">
         <input type="text" class="username" id="username" autocomplete="off" placeholder="Your Name">
         <textarea name="post" id="post" cols="30" rows="10" autocomplete="off"></textarea>
-        <button id="submit" class="submit">POST</button>
+        <button id="submit" class="submit" onclick="sendPost()">POST</button>
     </div>
 
+    <script src="/static/reconnecting-websocket.min.js"></script>
     <script src="/static/script.js"></script>
 </body>
 

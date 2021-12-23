@@ -101,17 +101,17 @@ func ListenToWsChannel() {
 
 		switch payload.Action {
 		case "username":
-			clients[payload.Conn] = payload.username
+			clients[payload.Conn] = payload.Username
 		case "left":
 			delete(clients, payload.Conn)
+		case "broadcast":
+			response.Action = "broadcast"
+			response.Post = fmt.Sprintf(`
+				<div class="post">
+					<p>%s</p>
+					<small class="name">%s</small>
+				</div>`, payload.Post, payload.Username)
+			broadcastToAllUser(response)
 		}
-		// response.Action = "Sample Action"
-		// response.Post = fmt.Sprintf(`
-		// 	<div class="message">
-		// 		<p>%s</p>
-		// 		<small class="name">%s</small>
-		// 	</div>`, payload.Username, payload.Post)
-
-		// broadcastToAllUser(response)
 	}
 }
